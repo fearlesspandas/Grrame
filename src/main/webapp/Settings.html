@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel = "stylesheet" type = "text/css" href = "styles/ERstyles.css"/>
+<script src = "scripts/TableHandler.js"></script>
+<script src = "scripts/ManageExpense.js"></script>
+<script src = "scripts/EmployeeInfo.js"></script>
+<title>Settings</title>
+</head>
+<body>
+	<div id = "employeeinfo">
+		<h2 id = "employeename">
+		Settings
+		</h2>
+		<div class = "displayDiv">
+		      	<form id = "newname" method = "post" action = "settings?op=name">
+		      	<fieldset>
+		      		First Name <input required type = "text" name = "newfirstname" id = "newfirstname"/>
+		      	</fieldset>
+		      	<fieldset>
+		      		Last Name <input required type = "text" name = "newlastname" id = "newlastname"/>
+		      	</fieldset>
+		      	<input type = "submit" value = "Change Name Info"/>
+		      	</form>
+		      	<form id = "newemail" method = "post" action = "settings?op=email">
+		      	<fieldset>
+		      		Email <input required type = "text" name = "newemail" id = "newemail"/>
+		      	</fieldset>
+		      	<input type = "submit" value = "Change Email Info"/>
+		      	</form>
+		      	<form id = "newpassword" method = "post" action = "settings?op=password">
+		      	<fieldset>
+		      		Current Password <input required type = "password" name = "currentpassword" id = "currentpassword"/>
+		      	</fieldset>
+		      	<input type = "submit" value = "Change Password"/>
+		      	</form>
+		</div>
+		<a href = "expensePage">Back</a>
+	</div>
+</body>
+
+</html>
